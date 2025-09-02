@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 기초 - Day 1 | Frontend Learning Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>📚 프론트엔드 수업 - 1일차</h1>
+                <p class="subtitle">HTML 기초 마스터하기</p>
+            </div>
+            <nav class="breadcrumb">
+                <span>수업 1일차</span> → <span class="current">HTML 기본 태그</span>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="intro-section">
+                <div class="lesson-header">
+                    <span class="lesson-badge">1일차</span>
+                    <h2>HTML 기본 태그 익히기</h2>
+                    <p class="lesson-description">
+                        웹사이트를 만들기 위한 첫 걸음! HTML 태그들을 하나씩 배워보자.
+                    </p>
+                </div>
+            </section>
+
+            <section class="learning-objectives">
+                <h3>📚 학습 목표</h3>
+                <ul class="objectives-list">
+                    <li>HTML 문서의 기본 구조 이해하기</li>
+                    <li>제목 태그 (h1~h6) 활용법 익히기</li>
+                    <li>문단과 목록 태그 사용하기</li>
+                    <li>이미지와 링크 태그 다루기</li>
+                    <li>시맨틱 마크업의 중요성 알기</li>
+                </ul>
+            </section>
+
+            <section class="content-sections">
+                <div class="content-card">
+                    <h3>🏗️ HTML 문서 기본 구조</h3>
+                    <div class="code-example">
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;페이지 제목&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 페이지 내용 --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                    <div class="explanation">
+                        <p><strong>DOCTYPE:</strong> HTML5 문서임을 선언</p>
+                        <p><strong>html:</strong> HTML 문서의 루트 요소</p>
+                        <p><strong>head:</strong> 메타데이터 영역 (브라우저에 표시되지 않음)</p>
+                        <p><strong>body:</strong> 실제 콘텐츠 영역 (브라우저에 표시됨)</p>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>📝 제목과 문단 태그</h3>
+                    <div class="tag-examples">
+                        <div class="tag-item">
+                            <div class="tag-code">&lt;h1&gt;~&lt;h6&gt;</div>
+                            <div class="tag-desc">제목 태그 (가장 중요한 h1부터 h6까지)</div>
+                            <div class="tag-demo">
+                                <h1 style="margin: 10px 0; font-size: 24px;">Main Title (h1)</h1>
+                                <h2 style="margin: 8px 0; font-size: 20px;">Subtitle (h2)</h2>
+                                <h3 style="margin: 6px 0; font-size: 16px;">Section Title (h3)</h3>
+                            </div>
+                        </div>
+                        <div class="tag-item">
+                            <div class="tag-code">&lt;p&gt;</div>
+                            <div class="tag-desc">문단 태그 (paragraph)</div>
+                            <div class="tag-demo">
+                                <p style="margin: 10px 0; line-height: 1.5;">
+                                    이것은 문단 태그입니다. 긴 텍스트를 구조적으로 나누어 표현할 때 사용합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>📋 목록 태그</h3>
+                    <div class="list-examples">
+                        <div class="list-type">
+                            <h4>순서 없는 목록 (ul)</h4>
+                            <div class="code-example">
+                                <pre><code>&lt;ul&gt;
+    &lt;li&gt;첫 번째 항목&lt;/li&gt;
+    &lt;li&gt;두 번째 항목&lt;/li&gt;
+    &lt;li&gt;세 번째 항목&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            </div>
+                            <div class="demo-result">
+                                <ul>
+                                    <li>웹 디자인 기초</li>
+                                    <li>HTML/CSS 마스터</li>
+                                    <li>자바스크립트 활용</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-type">
+                            <h4>순서 있는 목록 (ol)</h4>
+                            <div class="code-example">
+                                <pre><code>&lt;ol&gt;
+                    &lt;li&gt;HTML 구조 익히기&lt;/li&gt;
+                    &lt;li&gt;CSS 스타일링&lt;/li&gt;
+                    &lt;li&gt;JavaScript 로직&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                            </div>
+                            <div class="demo-result">
+                                <ol>
+                                    <li>HTML 구조 익히기</li>
+                                    <li>CSS 스타일링</li>
+                                    <li>JavaScript 로직</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>🖼️ 이미지와 링크</h3>
+                    <div class="media-examples">
+                        <div class="media-item">
+                            <h4>이미지 태그 (img)</h4>
+                            <div class="code-example">
+                                <pre><code>&lt;img src="이미지경로.jpg" alt="이미지 설명" width="300"&gt;</code></pre>
+                            </div>
+                            <div class="demo-result">
+                                <img src="https://images.unsplash.com/photo-1498612753354-772a30629934?w=300&auto=format&fit=crop&q=60" 
+                                     alt="웹 개발 이미지" 
+                                     style="max-width: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                            </div>
+                        </div>
+                        <div class="media-item">
+                            <h4>링크 태그 (a)</h4>
+                            <div class="code-example">
+                                <pre><code>&lt;a href="https://www.w3schools.com" target="_blank"&gt;
+    W3Schools에서 더 배우기
+&lt;/a&gt;</code></pre>
+                            </div>
+                            <div class="demo-result">
+                                <a href="https://www.w3schools.com/html/" target="_blank" class="demo-link">
+                                    W3Schools HTML 튜토리얼 →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>📖 정의 목록 (dl, dt, dd)</h3>
+                    <div class="code-example">
+                        <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language의 줄임말&lt;/dd&gt;
+    
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets의 줄임말&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                    </div>
+                    <div class="demo-result">
+                        <dl class="definition-list">
+                            <dt>HTML</dt>
+                            <dd>웹 페이지의 구조를 정의하는 마크업 언어</dd>
+                            
+                            <dt>CSS</dt>
+                            <dd>웹 페이지의 스타일과 레이아웃을 담당하는 스타일시트 언어</dd>
+                            
+                            <dt>JavaScript</dt>
+                            <dd>웹 페이지에 동적 기능을 추가하는 프로그래밍 언어</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+            <section class="practice-section">
+                <h3>💻 실습 예제</h3>
+                <div class="practice-card">
+                    <h4>개인 소개 페이지 만들기</h4>
+                    <p>배운 태그들을 활용하여 간단한 자기소개 페이지를 만들어보세요:</p>
+                    <div class="practice-code">
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;나를 소개합니다&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;안녕하세요! 저는 [이름]입니다 😊&lt;/h1&gt;
+    
+    &lt;p&gt;웹 개발을 배우고 있는 신입 개발자입니다.&lt;/p&gt;
+    
+    &lt;h2&gt;나의 취미&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;코딩하기&lt;/li&gt;
+        &lt;li&gt;새로운 기술 탐구&lt;/li&gt;
+        &lt;li&gt;온라인 강의 수강&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;h2&gt;학습 계획&lt;/h2&gt;
+    &lt;ol&gt;
+        &lt;li&gt;HTML/CSS 마스터&lt;/li&gt;
+        &lt;li&gt;JavaScript 기초&lt;/li&gt;
+        &lt;li&gt;React 프레임워크&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tips-section">
+                <h3>💡 개발자 팁</h3>
+                <div class="tips-grid">
+                    <div class="tip-item">
+                        <h4>🎯 시맨틱 마크업</h4>
+                        <p>태그를 의미에 맞게 사용하세요. h1은 페이지당 하나만, 제목은 순서대로 사용하는 것이 좋습니다.</p>
+                    </div>
+                    <div class="tip-item">
+                        <h4>♿ 접근성</h4>
+                        <p>img 태그에는 항상 alt 속성을, 링크에는 의미있는 텍스트를 사용하세요.</p>
+                    </div>
+                    <div class="tip-item">
+                        <h4>📱 반응형</h4>
+                        <p>viewport 메타태그를 꼭 추가하여 모바일에서도 잘 보이도록 하세요.</p>
+                    </div>
+                    <div class="tip-item">
+                        <h4>🔧 개발자 도구</h4>
+                        <p>F12키로 개발자 도구를 열어 HTML 구조를 실시간으로 확인해보세요.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="navigation-section">
+                <div class="nav-buttons">
+                    <button class="nav-btn prev" disabled>← 이전 강의</button>
+                    <button class="nav-btn next" onclick="nextLesson()">다음 강의: CSS 기초 →</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>프론트엔드 수업 1일차 - HTML 기초</p>
+                <p>📝 열심히 공부해서 멋진 웹사이트 만들어보자!</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
